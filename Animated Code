@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+</head>
+
+
+
+<canvas id="canvas"></canvas>
+
+<script>
+
+window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
+
+var canvas = document.getElementById('canvas'),
+    context = canvas.getContext('2d'),
+    canvasWidth = canvas.width = window.innerWidth,
+    canvasHeight = canvas.height = window.innerHeight,
+    globalTick = 0,
+    points = [],
+    pointCount = 1,  //Speed of the balls
+    randomRange = function(min, max){
+        return Math.floor( (Math.random() * (max - min + 1) ) + min);
+    },
+    iPoints;    		
+
+var Point = function(x, y, vx, vy){
+  this.x = x;
+  this.y = y;
+  this.vx = vx;
+  this.vy = vy;
+}
+    
+Point.prototype.update = function(){
+  this.x += this.vx;
+  this.y += this.vy;
+      
+  if(this.x > canvasWidth || this.x < 0){
+    this.vx = -this.vx;
+  }
+      
+  if(this.y > canvasHeight || this.y < 0){
+    this.vy = -this.vy;
+  }
+}
+      
+Point.prototype.render = function(i){				
+  context.beginPath();
+  context.arc(this.x, this.y, randomRange(1, 10), 0, Math.PI * 2, false);  //Changes the size of the balls
+  context.closePath();
+  context.fillStyle = 'hsl('+(globalTick+randomRange(0, 15))+', '+randomRange(80, 100)+'%, '+randomRange(50, 60)+'%)';  
+  //Changes the range of colours used
+
+
+
+  context.fill();
+}
+        
+var updatePoints = function(){
+  var i = points.length;
+  while(i--){
+    points[i].update();         
+  }
+}
+            
+var renderPoints = function(){
+  var i = points.length;
+  while(i--){
+    points[i].render(i);         
+  }
+}			
+                
+for(iPoints = 0; iPoints < pointCount; iPoints++){
+  points.push(new Point((iPoints/ pointCount) * canvasWidth, (iPoints/ pointCount) * canvasHeight, (randomRange(0, 100) - 50)/2, (randomRange(0, 100) - 50)/2));
+}		
+
+var loop = function(){               //Loops the function 
+  window.requestAnimFrame(loop);
+  updatePoints();
+  renderPoints();				
+  globalTick++;
+};
+
+loop();   
+
+
+
+</script>
+
+</body>
+</html>
