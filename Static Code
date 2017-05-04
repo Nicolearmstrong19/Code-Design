@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+</head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<canvas id="myCanvas" width="1200" height="1000" style="border:3px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+  var y = canvas.width / 2;
+var x = canvas.height / 2;
+
+//////////  vine
+
+      ctx.beginPath();
+      ctx.moveTo(200, 200);
+
+// bezier curve from flower 1 to flower 2
+      ctx.bezierCurveTo(220, 00, 200, 300, 450, 100);
+
+// quadratic curve from flower 2 to flower 3
+      ctx.quadraticCurveTo(450, 100, 450, 100);
+
+// quadratic curve from flower 3 to flower 4
+      ctx.quadraticCurveTo(400, 100, 600, 250);
+
+// bezier curve from flower 4 to flower 5
+      ctx.bezierCurveTo(800, 30, 800, 50, 1000, 300);
+
+      // line 2
+      ctx.lineTo(1000, 200);
+
+    // context.lineWidth = 5;
+      ctx.strokeStyle = 'green';
+      ctx.stroke();
+
+
+/////////////////////////////////
+
+ctx.beginPath();  //flower 1
+ctx.arc(240, 270, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(275, 210, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(260, 150, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(200, 130, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(140, 160, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(140, 220, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.arc(170, 270, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(200, 200, 50, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "black";
+ctx.fill();
+
+///////////////////////////////////
+
+ctx.beginPath();  //flower 2
+ctx.arc(430, 115, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(470, 102, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(470, 65, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(430, 43, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(400, 62, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(399, 100, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(430, 80, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "black";
+ctx.fill();
+
+
+///////////////////////
+
+ctx.beginPath();  //flower 2
+ctx.arc(780, 115, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(820, 102, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(820, 65, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(780, 43, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(750, 62, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(750, 100, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(780, 80, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "black";
+ctx.fill();
+
+
+
+
+///////////////////////
+ctx.beginPath();  //flower 3
+ctx.arc(640, 345, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(675, 285, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(660, 225, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(600, 205, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(540, 235, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(540, 295, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(570, 345, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(600, 275, 50, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "black";
+ctx.fill();
+
+
+////////////////////////
+
+
+ctx.beginPath();  //flower 4
+ctx.arc(1040, 270, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(1075, 210, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(1060, 150, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(1000, 130, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(940, 160, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(940, 220, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(980, 270, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "pink";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(1000, 200, 50, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fillStyle = "black";
+ctx.fill();
+
+/////////////////// leaf 1
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(340, 160);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(300, 160, 320, 110);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+ctx.beginPath();  // Right Leaf
+ctx.moveTo(342, 160);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(375, 160, 320, 110);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+/////////////////// leaf 2
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(360, 160);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(310, 160, 380, 210);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+
+ctx.beginPath(); // Right Leaf
+ctx.moveTo(362, 160);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(385, 160, 380, 210);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+
+/////////////////// leaf 3
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(490, 165); //top leaf across and down
+//Ctx.lineTo(180,200);  //width of curve, 
+ctx.quadraticCurveTo(450, 160, 440, 210);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+
+ctx.beginPath(); // Right Leaf
+ctx.moveTo(492, 165);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(520, 180, 440, 210);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+/////////////////// leaf 4
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(500, 167); //top leaf across and down
+//Ctx.lineTo(180,200);  //width of curve, 
+ctx.quadraticCurveTo(455, 160, 530, 120);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+
+ctx.beginPath(); // Right Leaf
+ctx.moveTo(502, 168);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(520, 180, 530, 120);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+
+/////////////////// leaf 5
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(673, 170); //top leaf across and down
+//Ctx.lineTo(180,200);  //width of curve, 
+ctx.quadraticCurveTo(640, 160, 640, 120);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+
+ctx.beginPath(); // Right Leaf
+ctx.moveTo(675, 170);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(700, 150, 640, 120);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+/////////////////// leaf 6
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(700, 144); //top leaf across and down
+//Ctx.lineTo(180,200);  //width of curve, 
+ctx.quadraticCurveTo(670, 160, 730, 200);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+
+ctx.beginPath(); // Right Leaf
+ctx.moveTo(702, 143);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(740, 160, 730, 200);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+/////////////////// leaf 7
+
+ctx.beginPath(); // Left Leaf
+ctx.moveTo(880, 150); //top leaf across and down
+//Ctx.lineTo(180,200);  //width of curve, 
+ctx.quadraticCurveTo(890, 190, 851, 205);
+ctx.stroke();
+ctx.fillStyle = "#39b54a";
+ctx.fill();
+
+
+ctx.beginPath(); // Right Leaf
+ctx.moveTo(879, 149);
+//Ctx.lineTo(180,200);
+ctx.quadraticCurveTo(850, 130, 850, 205);
+ctx.stroke();
+ctx.fillStyle = "#8cc63f";
+ctx.fill();
+
+
+
+
+</script>
+
+</body>
+</html>
