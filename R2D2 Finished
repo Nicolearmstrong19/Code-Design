@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+//Head - Lewis
+	ctx.beginPath();
+	ctx.arc(300,200,100,3,2*Math.PI);
+	ctx.strokeStyle = "black";
+	ctx.lineWidth=7;
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(300,140,20,0,2*Math.PI);
+	ctx.strokeStyle = "black";
+	ctx.fillStyle = "blue";
+	ctx.stroke();
+	ctx.fill();
+	ctx.beginPath();
+	ctx.rect(270,110,60,60);
+	ctx.strokeStyle = "Black";
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(200, 215);
+	ctx.lineTo(400,215);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(200, 205);
+	ctx.lineTo(400,205);
+	ctx.lineWidth=7;
+	ctx.strokeStyle = "blue";
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.rect(220,155,30,40);
+	ctx.strokeStyle = "black";
+	ctx.lineWidth= 7;
+	ctx.fillStyle = "blue";
+	ctx.stroke();
+	ctx.fill();
+	ctx.beginPath();
+	ctx.rect(350,155,30,40);
+	ctx.strokeStyle = "black";
+	ctx.fillStyle = "blue";
+	ctx.stroke();
+	ctx.fill();
+//right arm - Leonie 
+	ctx.moveTo(400,210);
+	ctx.lineTo(450,210);
+	ctx.stroke();
+	ctx.moveTo(450,210);
+	ctx.lineTo(450,350);
+	ctx.stroke();
+	ctx.moveTo(450,350);
+	ctx.lineTo(400,350);
+	ctx.stroke();
+	ctx.moveTo(440,350);
+	ctx.lineTo(440,420);
+	ctx.stroke();
+	ctx.moveTo(400,420);
+	ctx.lineTo(450,420);
+	ctx.stroke();
+	ctx.moveTo(450,420);
+	ctx.lineTo(450,500);
+	ctx.stroke();
+	ctx.moveTo(400,500);
+	ctx.lineTo(450,500);
+	ctx.stroke();
+	ctx.moveTo(450,500);
+	ctx.lineTo(460,540);
+	ctx.stroke();
+	ctx.moveTo(460,540);
+	ctx.lineTo(390,540);
+	ctx.stroke();
+	ctx.moveTo(390,540);
+	ctx.lineTo(400,500);
+	ctx.stroke();
+//left arm- Hayley 
+	
+	ctx.beginPath();
+	ctx.moveTo(200, 210);
+	ctx.lineTo(150, 210);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(150, 350);
+	ctx.lineTo(150, 210);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(200, 350);
+	ctx.lineTo(150, 350);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(160, 350);
+	ctx.lineTo(160, 420);
+	ctx.stroke();
+	ctx.moveTo(200,420);
+	ctx.lineTo(150,420);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(150, 500);
+	ctx.lineTo(150, 420);
+	ctx.stroke();
+	ctx.moveTo(200,500);
+	ctx.lineTo(150,500);
+	ctx.stroke();
+	ctx.moveTo(150,500);
+	ctx.lineTo(140,540);
+	ctx.stroke();
+	ctx.moveTo(200,500);
+	ctx.lineTo(210,540);
+	ctx.stroke();
+	
+	ctx.moveTo(210,540);
+	ctx.lineTo(140,540);
+	ctx.stroke();
+//centre body
+	ctx.beginPath();
+	ctx.rect(200,200,200,300);
+	ctx.lineWidth=7;
+	ctx.strokeStyle = "Black";
+	ctx.stroke();
+	ctx.font = "50px Arial";
+	ctx.strokeText("R2D2",240,270);
+	///////hayley////////
+//bottom middle leg
+	ctx.beginPath();
+	ctx.moveTo(340,500);
+	ctx.lineTo(310,530);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(240,500);
+	ctx.lineTo(270,530);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(310,525);
+	ctx.lineTo(330,570);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(270,525);
+	ctx.lineTo(250,570);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(250,590);
+	ctx.lineTo(240,650);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(330,590);
+	ctx.lineTo(340,650);
+	ctx.stroke();
+	// bottom of the bottom leg
+	ctx.beginPath();
+	ctx.moveTo(240,650);
+	ctx.lineTo(340,650);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(310,575);
+	ctx.lineTo(340,650);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(270,575);
+	ctx.lineTo(240,650);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(270,578);
+	ctx.lineTo(310,578);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(250,580,10,0,2*Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(330,580,10,0,2*Math.PI);
+	ctx.stroke();
+//body work - Nicole
+	
+ctx.beginPath(); 
+ctx.arc(300,400,10,0,2*Math.PI);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(300,430,10,0,2*Math.PI);
+ctx.stroke();
+ctx.rect(280, 380, 40, 70);
+ctx.stroke();
+ctx.rect(210,290,30,160);
+ctx.stroke();
+ctx.rect(360,290,30,160);
+ctx.stroke();
+ctx.rect(250,290,100,20);
+ctx.stroke();
+ctx.rect(250,320,100,20);
+ctx.stroke();
+ctx.rect(250,350,100,20);
+ctx.stroke();
+ctx.rect(250,380,20,30);
+ctx.stroke();
+ctx.rect(250,420,20,30);
+ctx.stroke();
+ctx.rect(330,380,20,70);
+ctx.stroke();
+ctx.rect(320,460,25,10);
+ctx.stroke();
+ctx.rect(360,460,25,10);
+ctx.stroke();
+ctx.rect(280,460,25,10);
+ctx.stroke();
+ctx.rect(240,460,25,10);
+ctx.stroke();
+ctx.rect(210,460,20,30);
+ctx.stroke();
+ctx.rect(240,480,150,10);
+ctx.stroke();
+</script>
+
+</body>
+</html>
